@@ -1,11 +1,11 @@
 public class ConversionTable {
-
+        // Converts Feet To Meters
     public static double footToMeter(double foot) {
-        return foot * 0.3048;
+        return foot * 0.305;
     }
-
+        // Converts Meters to feet
     public static double meterToFoot(double meter) {
-        return meter / 0.3048;
+        return meter / 0.305;
     }
 
     public static void main(String[] args) {
