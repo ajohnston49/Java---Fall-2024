@@ -1,9 +1,13 @@
+//Meters to feet Conversion Table Tool
+//Developer: Alex Johnston
+//Version: 1.0 - 08/23/2024
+
 public class ConversionTable {
-        // Converts Feet To Meters
+
     public static double footToMeter(double foot) {
         return foot * 0.305;
     }
-        // Converts Meters to feet
+
     public static double meterToFoot(double meter) {
         return meter / 0.305;
     }
