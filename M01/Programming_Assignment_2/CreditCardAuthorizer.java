@@ -2,7 +2,7 @@
 //developer: Alex Johnston
 //Version 1.0 - 8/23/2024
 
-import java.util.scanner;
+import java.util.Scanner;
 
 public class CreditCardAuthorizer {
 
@@ -18,14 +18,15 @@ public class CreditCardAuthorizer {
     public static void main(String[] args) {
 
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a credit card number: ");
-        long creditCardNum = input.nextLong();
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("Enter a credit card number: ");
+            long creditCardNum = input.nextLong();
 
-        if (isValid(creditCardNum)) {
-            System.out.println(creditCardNum + " is valid.");
-        } else {
-            System.out.println(creditCardNum + " is INVALID");
+            if (isValid(creditCardNum)) {
+                System.out.println(creditCardNum + " is valid.");
+            } else {
+                System.out.println(creditCardNum + " is INVALID");
+            }
         }
     }
 
