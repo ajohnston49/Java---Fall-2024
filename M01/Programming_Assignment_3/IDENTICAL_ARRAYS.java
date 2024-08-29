@@ -12,15 +12,15 @@ public class IDENTICAL_ARRAYS {
 	        int[][] m2 = new int[3][3];
 	        //creating scanner for user to enter their arrays
 	        Scanner input = new Scanner(System.in);
-	        System.out.print("Enter list1: ");
+	        System.out.print("Enter First List(Must be 9 Numbers long) : ");
 	        for (int i = 0; i < m1.length; i++)
 	            for (int j = 0; j < m1[i].length; j++)
 	                m1[i][j] = input.nextInt();
-	        System.out.print("Enter list2: ");
+	        System.out.print("Enter Second List(Must Be 9 Numbers Long) : ");
 	        for (int i = 0; i < m2.length; i++)
 	            for (int j = 0; j < m2[i].length; j++)
 	                m2[i][j] = input.nextInt();
-	        // prints if they are identical or not
+	        // prints if they are strictly identical or not
 	        if (equals(m1, m2)) {
 	            System.out.println("The two arrays are strictly identical.");
 	        } else {
